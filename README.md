@@ -26,9 +26,15 @@ song6,user5,2
 *To Run*
 
 To run, first run 'gradle build'. The function of the program is dictated by flag inputs.
+
 To generate a file with song rating means and standard deviations, run "gradle run -q --args="<input-file>' '<output-file>'""
+
 To generate a file with user ratings of every song, filtered for uncooperative users, run "gradle run -q --args="'<input-file>' '<output-file>' '-a'""
+
 To generate a list of song similarites, calculated using Euclidean distance, run "gradle run -q --args="'<input-file>' '<output-file>' '-u'""
+
 To generate a list of predicted ratings of songs by users who have not rated them, run "gradle run -q --args="'<input-file>' '<output-file>' '-p'""
+
 To generate a list of songs a given user may enjoy based on songs they like, run "gradle run -q --args="'<input-file>' '<output-file>' '-r' 'song1' 'song2' 'song3'" where arguments passed after the '-r' flag are songs the user likes in the database.
-To generate a playlist of songs a given user may enjoy based on songs they like, run "gradle run -q --args="'<input_file>' '<output_file>' '-s' 'K' '<liked_song_name1>' '<liked_song_name2>' ..." where 'K' is the number of starting centroids for K-means clustering. More than K songs may be chosen from the database, /n but not less. 
+
+To generate a playlist of songs a given user may enjoy based on songs they like, run "gradle run -q --args="'<input_file>' '<output_file>' '-s' 'K' '<liked_song_name1>' '<liked_song_name2>' ..." where 'K' is the number of starting centroids for K-means clustering. More than K songs may be chosen from the database, but not less. 
